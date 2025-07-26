@@ -35,3 +35,52 @@
 body {
   @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen;
 }
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400 dark:bg-gray-500;
+}
+
+/* Selection Styles */
+::selection {
+  @apply bg-primary-200 text-primary-900;
+}
+
+::-moz-selection {
+  @apply bg-primary-200 text-primary-900;
+}
+
+/* Focus Styles */
+.focus-visible {
+  @apply outline-none ring-2 ring-primary-500 ring-offset-2 ring-offset-white dark:ring-offset-gray-900;
+}
+
+/* Line Clamp Utility */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth Transitions */
+* {
+  @apply transition-colors duration-200;
+}
+
+/* Custom Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent;
+}
